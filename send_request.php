@@ -11,7 +11,7 @@ if(!isset($_SESSION['isLogged'])){
 
             //Cookie generating function
             function getCookie() {
-                    var name = "admin" + "=";
+                    var name = "user" + "=";
                     var decodedCookie = decodeURIComponent(document.cookie);
                     var ca = decodedCookie.split(';');
                     for(var i = 0; i <ca.length; i++) {

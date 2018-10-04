@@ -7,7 +7,7 @@ if(!isset($_SESSION['isLogged'])){
 
 if(isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['subject']) && isset($_POST['message']) && isset($_POST['csrf_token']) && isset($_COOKIE["admin"])){
 
-    if($_POST['csrf_token']==$_COOKIE["admin"]){
+    if($_POST['csrf_token']==$_COOKIE["user"]){
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $subject=$_POST['subject'];
