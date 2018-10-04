@@ -17,14 +17,10 @@ if(isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['subject']) 
 
         header("Location: ../../send_request.php?response=Request Successfully Sent! Token Matched.");
         exit;
-
     }else{
-
         header("Location: ../../index.php?response=Request Sending Failed! Token Miss-Match.");
         exit;
-        
     }
-
    
 }else{
     die();

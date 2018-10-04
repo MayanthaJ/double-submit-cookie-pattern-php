@@ -16,19 +16,19 @@ Password =  test123
 
 ===========================================================
 
-//Cookie generating function
-    function getCookie() {
-        var name = "user" + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-         }
-        eturn "";
-    } 
+//Cookie generating function<br>
+    function getCookie() {<br>
+        var name = "user" + "=";<br>
+        var decodedCookie = decodeURIComponent(document.cookie);<br>
+        var ca = decodedCookie.split(';');<br>
+        for(var i = 0; i <ca.length; i++) {<br>
+            var c = ca[i];<br>
+            while (c.charAt(0) == ' ') {<br>
+                c = c.substring(1);<br>
+            }<br>
+            if (c.indexOf(name) == 0) {<br>
+                return c.substring(name.length, c.length);<br>
+            }<br>
+         }<br>
+        return 0;<br>
+    } <br>

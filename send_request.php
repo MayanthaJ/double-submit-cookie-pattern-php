@@ -23,8 +23,9 @@ if(!isset($_SESSION['isLogged'])){
                             return c.substring(name.length, c.length);
                         }
                     }
-                    return "";
+                    return 0;
                 } 
+        
             //Window onload cookie creation function
             window.onload=function() {
                 var csrfToken=getCookie();
